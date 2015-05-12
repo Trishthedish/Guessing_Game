@@ -1,0 +1,40 @@
+<script type="text/javascript">
+confirm("Are you ready to test your knowledge of America's most powerful branch of Government?");
+//alert("This requires some serious brain power, may you preserve");
+var name = prompt("First, what should I call you?");
+var greeting = function(name) {}
+var message = "Welcome, " + name + "!"
+var total = 0
+
+do{
+
+  var guess = prompt("Can you name any of the female Supreme Court Justice's? (Rules: Enter 1 name at time, Proper spelling is a must!, you only have to name 3 to win!) good luck!");
+ switch (guess) {
+  case 'O\'Connor':
+  title = 'O\'Connor is correct! Great job, did you know she\'s from Arizona?';
+  total = total + 1;
+  break;
+  case 'Ginsburg':
+  title = 'Ginsburg is correct! Did you know she often takes naps while in public? HASHTAG badass!';
+  total = total + 1
+  break;
+  case 'Sotomayor':
+  title = 'Sotomayor is correct! did you know she was the very first hispanic Supreme Court Justice EVER.(Though fingers crossed, not the last!)';
+  total = total + 1;
+  break;
+  case 'Kegan':
+  title = 'Kegan is correct, she was appointed by President Obama making her the 112th Supreme Court Justice';
+  total = total + 1
+  break;
+  default:
+  title = 'Either you cannot spell, remember, or care to know about the only 4 women to hold the highest and most powerful seat in the United States Goverment. Advice: google, memorize and repeat this game.';
+  break;
+  }
+  alert(title);
+}
+
+while (total < 3);
+
+alert("Congrats! "+ name + "! you kicked ass!");
+
+</script>
