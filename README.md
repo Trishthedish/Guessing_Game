@@ -8,3 +8,5 @@ Supreme Court Justices. Fellow Code fellow students Kate and Elliot
 were incredible supporrive as I attempted to plan out this code. Huge
 thanks is owed to Elliot who helped me correct my 'do while loop'.
 Hopefully, this cheeky game will be informative and fun.
+
+Added sassy comments if the user chooses not to play or quits in the midst of the game.
