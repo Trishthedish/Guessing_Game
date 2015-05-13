@@ -1,4 +1,16 @@
 <script type="text/javascript">
+
+  var Judge = function(name, fact){
+    this.name = name;
+    this.fact = fact;
+  }
+  var Judges= [];
+  Judges.push(new Judge('O\'Connor', "she is from Arizona" ));
+  Judges.push(new Judge('Ginsburg', "she often takes naps while in public? HASHTAG badass!"));
+  Judges.push(new Judge('Sotomayor', "she was the very first hispanic Supreme Court Justice EVER.(Though fingers crossed, not the last!" ));
+  Judges.push(new Judge('Kagan', "she was appointed by President Obama making her the 112th Supreme Court Justice" ));
+
+
   var ready = confirm("Are you ready to test your knowledge of America's most powerful branch of Government?");
 
   if (ready) {
@@ -11,20 +23,20 @@
       var guess = prompt("Can you name any of the female Supreme Court Justice's? (Rules: Enter 1 name at time, Proper spelling is a must!, you only have to name 3 to win!) good luck!");
       if (guess) {
         switch (guess) {
-          case 'O\'Connor':
-            title = 'O\'Connor is correct! Great job, did you know she\'s from Arizona?';
+          case Judges[0].name:
+            title = Judges[0].name + " is correct! Great job, did you know " + Judges[0].fact + "?";
             total = total + 1;
             break;
-          case 'Ginsburg':
-            title = 'Ginsburg is correct! Did you know she often takes naps while in public? HASHTAG badass!';
+          case Judges[1].name:
+            title = Judges[1].name + " is correct! Did you know" + Judges[1].fact + "!";
             total = total + 1;
             break;
-          case 'Sotomayor':
-            title = 'Sotomayor is correct! did you know she was the very first hispanic Supreme Court Justice EVER.(Though fingers crossed, not the last!)';
+          case Judges[2].name:
+            title = Judges[2].name + " is correct! did you know " + Judges[2].fact + "!";
             total = total + 1;
             break;
-          case 'Kagan':
-            title = 'Kagan is correct, she was appointed by President Obama making her the 112th Supreme Court Justice';
+          case Judges[3].name:
+            title = Judges[3].name + " is correct, " + Judges[3].fact +"!";
             total = total + 1;
             break;
           default:
