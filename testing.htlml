@@ -1,0 +1,17 @@
+
+
+<div class="image123">
+    <div>
+        <img src="/images/tv.gif" />
+        <p>This is image 1</p>
+    </div>
+    <div>
+        <img class="middle-img" src="/images/tv.gif/" />
+        <p>This is image 2</p>
+    </div>
+    <div>
+        <img src="/images/tv.gif/" />
+        <p>This is image 3</p>
+    </div>
+</div>
+</script>
